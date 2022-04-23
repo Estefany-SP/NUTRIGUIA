@@ -439,7 +439,7 @@ st.subheader('¿Sábes en que más ayuda los alimentos que consumes?')
 
 st.write('**NUTRIGUIA**, te proporciona lo necesario para que puedas descubrir más acerca de que es lo que comes. En la barra lateral, podrás encontrar una variedad de frutas y verduras que puedes elegir para saber un poco sobre ellas.')
 st.write('- Selecciona una opción para que se despliegue un dato interesante (dentro de la barra) y algunos beneficios (fuera de la barra) del producto que desees elegir.')
-st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-XAceUVtSXdGvhWKfRN47-H6L2XoODB9axVJE2Q-2jmrdGK61RHwymw3zs-7F4WJYXA&usqp=CAU')
+st.image('https://www.salud.mapfre.es/media/2019/10/tipos-de-alimentos-crudos.jpg')
 
 st.sidebar.header('◆ DATOS INTERESANTES Y BENEFICIOS.')
 
