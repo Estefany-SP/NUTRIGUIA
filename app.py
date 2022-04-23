@@ -40,8 +40,7 @@ pregunta4 = st.text_input('¿Cuál?')
 #st.write(pregunta4)
 
 import streamlit as st
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
+from streamlit_chat import message
 import pandas as pd
 
 st.header('Nutrichat')
@@ -56,7 +55,7 @@ talk = df['NutriBot'].tolist()
 
 Nutri = ChatBot('Nutrichat')
 
-trainer = ListTrainer(Nutri)
+trainer = message(Nutri)
 
 trainer.train(talk)
 
