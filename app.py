@@ -39,31 +39,6 @@ pregunta3 = st.radio('¿Tienes alguna enfermedad crónica?', ["SI","NO"])
 pregunta4 = st.text_input('¿Cuál?')
 #st.write(pregunta4)
 
-import streamlit as st
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
-import pandas as pd
-
-st.header('Nutrichat')
-st.write('En este espacio puedes introducir preguntas sencillas para que Nutribot nuestro robot nuticional te ayude respondiendo, algunos ejemplos pueden ser: ¿Qué puedes hacer?, ¿Me puedes dar un consejo de salud?, ¿De qué me sirve conocer el IMC?, entre otas cosas.')
-
-df = pd.read_csv('https://raw.githubusercontent.com/udaml-1/nutriguia/main/CHBSC.csv')
-
-
-input_text = st.text_input('Yo: ', '')
-
-talk = df['NutriBot'].tolist()
-
-Nutri = ChatBot('Nutrichat')
-
-trainer = ListTrainer(Nutri)
-
-trainer.train(talk)
-
-respuesta_chat = Nutri.get_response(input_text)
-
-st.write('🤖',respuesta_chat)
-
 st.subheader('Calculadora para IMC(Indice de Masa Corporal).')
 st.image('https://image.freepik.com/vector-gratis/mujeres-diminutas-cerca-escalas-grafico-obeso-aislaron-ejemplo-plano-vector-personajes-femeninos-dibujos-animados-dieta-usando-control-peso-imc-indice-masa-corporal-concepto-ejercicio-fisico-medico_74855-10177.jpg')
 st.write('El IMC es un valor orientativo y de medida que permite realizar una valoración del peso corporal.')
