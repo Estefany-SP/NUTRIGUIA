@@ -116,8 +116,7 @@ if cal==True:
         st.write('3. Realizar actividad física frecuente: unos 60 minutos por día para los jóvenes y 150 minutos semanales para los adultos. En el caso de que haya un alto grado de obesidad, se recomienda comenzar por caminar 30 minutos al día a paso ligero. ')
         st.write('4. Deja de fumar.')
         st.write('5. Es importante no obsesionarse, pero puede ayudar a controlar el peso pesarse regularmente: una vez por semana es suficiente.')
-        st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgIGmCR2oA-vLBz2n6FnlrSKReTPe91MxcztnS0OS6quFIzgxD5ha_ctbmoI5R-T7V3as&usqp=CAU")
-        
+         
     if imc >= 35 and imc< 39.9:
         st.subheader('Se encuentra en OBESIDAD SEVERA O DE TIPO II')
         st.subheader('CAUSAS')
